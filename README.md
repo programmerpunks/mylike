@@ -1,5 +1,5 @@
-# The Alter Clone
-
+# MyLike App
+ 
 ### Description
 
 - This is an animated Alter application designed with React JSX.
@@ -33,7 +33,7 @@ Once done, then
 - Clone the respected git repository
 
 ```sh
-$ git clone https://github.com/programmerpunks/alter-clone.git
+$ git clone https://github.com/programmerpunks/mylike.git
 ```
 
 - Install all dependencies
