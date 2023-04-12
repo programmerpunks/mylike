@@ -18,7 +18,7 @@ const playbutton = require("../../assets/hero/images/playbutton.png");
 
 const Hero = () => {
     return (
-        <div className='bg-[#212429] bg-grid-img h-screen w-screen bg-section md:px-[15%] px-[5%]'>
+        <div className='bg-[#212429] bg-grid-img h-screen bg-section md:px-[15%] px-[5%]'>
             <div className='xl:pt-72 lg:pt-60 md:pt-40 pt-36'>
                 <div className="grid grid-cols-1 md:grid-cols-2 2xl:gap-80 xl:gap-30 lg:gap-20 md:gap-10 sm:gap-10 gap-4">
                     <div className=" ">
