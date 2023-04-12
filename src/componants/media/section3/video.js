@@ -46,7 +46,7 @@ function VideoCard() {
                     className="rounded-[45px] w-screen h-full"
                     title="alter-video"
                     allow="autoplay;"
-                    src="https://www.youtube.com/embed/r9jwGansp1E?autoplay=1&mute=1"
+                    src="https://youtube.com/embed/r9jwGansp1E?autoplay=1&mute=1"
                   ></iframe>
                 )}
               </div>

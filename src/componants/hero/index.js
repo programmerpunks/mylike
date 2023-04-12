@@ -60,14 +60,14 @@ const Hero = () => {
                             </button>
                         </div>
                         <div className="flex items-center md:mt-10 mt-5 gap-7">
-                            <a className='flex' href='www.telegram.com' target='_blank' rel="noreferrer"><FaTelegramPlane className='mt-1' /><p className="ml-1 text-center">Telegram</p></a>
-                            <a className='flex' href='www.discord.com' target='_blank' rel="noreferrer"><FaDiscord className='mt-1' /><p className="ml-1 text-center">Discord</p></a>
-                            <a className='flex' href='www.twitter.com' target='_blank' rel="noreferrer"><FaTwitter className='mt-1' /><p className="ml-1 text-center">Twitter</p></a>
+                            <a className='flex' href='https://telegram.com' target='_blank' rel="noreferrer"><FaTelegramPlane className='mt-1' /><p className="ml-1 text-center">Telegram</p></a>
+                            <a className='flex' href='https://discord.com' target='_blank' rel="noreferrer"><FaDiscord className='mt-1' /><p className="ml-1 text-center">Discord</p></a>
+                            <a className='flex' href='https://twitter.com' target='_blank' rel="noreferrer"><FaTwitter className='mt-1' /><p className="ml-1 text-center">Twitter</p></a>
                         </div>
                         <div className="flex items-center md:mt-10 mt-5 gap-7">
-                            <a className='flex' href='www.youtube.com' target='_blank' rel="noreferrer"><FaYoutube className='mt-1' /><p className="ml-1 text-center">Youtube</p></a>
-                            <a className='flex' href='www.facebook.com' target='_blank' rel="noreferrer"><FaFacebook className='mt-1' /><p className="ml-1 text-center">Facebook</p></a>
-                            <a className='flex' href='www.instagram.com' target='_blank' rel="noreferrer"><FaInstagram className='mt-1' /><p className="ml-1 text-center">Instagram</p></a>
+                            <a className='flex' href='https://youtube.com' target='_blank' rel="noreferrer"><FaYoutube className='mt-1' /><p className="ml-1 text-center">Youtube</p></a>
+                            <a className='flex' href='https://facebook.com' target='_blank' rel="noreferrer"><FaFacebook className='mt-1' /><p className="ml-1 text-center">Facebook</p></a>
+                            <a className='flex' href='https://instagram.com' target='_blank' rel="noreferrer"><FaInstagram className='mt-1' /><p className="ml-1 text-center">Instagram</p></a>
                         </div>
                     </div>
                     <div className="hidden md:block justify-end  mt-20 ld:mt-0">

@@ -27,7 +27,7 @@ const Navbar = ({
         <nav className={`fixed top-0 left-0 w-full z-50 px-1 xl:px-64 lg:px-28 backdrop-filter ${isMobileMenuOpen ? 'bg-black' : 'bg-transparent'}`}>
             <div className="flex justify-between items-center p-4 bg-transparent">
                 <div className="flex items-center space-x-4">
-                    <div className="md:hidden">
+                    <div className="md:hidden md:ml-0 mr-28">
                         <button
                             className="text-white text-2xl focus:outline-none"
                             onClick={toggleMobileMenu}
