@@ -6,16 +6,16 @@ const logo = require("../../assets/footer/images/logo.png");
 
 const Footer = () => {
     return (
-        <div className='mt-96 pt-20 md:mt-10 py-5 md:py-20 bg-[#0D0D0D] md:px-[15%] px-[5%]'>
+        <div className='mt-60 pt-20 md:mt-0 py-5 md:py-20 bg-[#0D0D0D] md:px-[15%] px-[5%]'>
             <div className='grid grid-cols-9'>
-                <div className='text-white col-span-9 md:col-span-3 '>
+                <div className='text-white col-span-9 md:col-span-6 xl:col-span-3 '>
                     <img src={logo} alt="Logo" className="h-8" />
                     <div className="mt-12">
                         <p className="text-[#5E5248] text-xs font-bold">For Business Inquaries</p>
                         <p className="text-xs font">admin@stylike.io</p>
                     </div>
                 </div>
-                <div className='text-white col-span-9 md:col-span-3 md:mt-0 mt-10'>
+                <div className='text-white col-span-9 md:col-span-6 xl:col-span-3 xl:mt-0 mt-10'>
                         <div className="flex  gap-x-2 ">
                             {links.map((lnk) => {
                                 return (

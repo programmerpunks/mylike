@@ -8,7 +8,7 @@ import Qasection from "./qasection";
 
 const Faq = () => {
     return (
-        <div className='mt-5 md:py-24 pt-72 md:pt-10 h-[496px]' id="FAQ">
+        <div className='mt-96 sm:mt-72 md:mt-56 xl:mt-32 pt-24 h-[496px]' id="FAQ">
             <div className='grid grid-cols-12 gap-3'>
                 <div className='col-span-12 md:col-span-5'>
                     <p className="text-3xl mb-6 font-bold">FAQ</p>

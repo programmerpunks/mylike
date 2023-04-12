@@ -2,7 +2,7 @@ const aboutsectionleftpic = require("../../assets/about/images/about-section-lef
 
 const About = () => {
     return (
-        <div className='py-32' id="About">
+        <div className='sm:py-32 py-16 ' id="About">
             <div className="grid grid-cols-1 xl:grid-cols-2 xl:gap-20 gap-5">
                 <div class="py-8 px-12 bg-[#3B3B3B] rounded-xl  items-center justify-center">
                     <p className='mt-8'><span className='bold-pink mr-1'>Mylike</span>in collaboration with Fashion TV aims to improve people sense of style by combining fashion and tech in a Web 3.0 platform!</p>

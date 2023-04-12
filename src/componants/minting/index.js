@@ -6,7 +6,7 @@ import { ContractABI } from "../../assets/minting/content/Contract";
 
 import "react-toastify/dist/ReactToastify.css";
 
-function Mint({
+function Minting({
     connection,
     disconnect,
     getTokens,
@@ -149,4 +149,4 @@ function Mint({
     );
 }
 
-export default Mint;
+export default Minting;

@@ -11,6 +11,7 @@ import Footer from './componants/footer';
 import Hero from './componants/hero';
 import MarketPlace from './componants/marketplace';
 import Media from './componants/media';
+import Mint from "./componants/mint";
 import Minting from './componants/minting';
 import Navbar from './componants/navbar';
 import News from './componants/news';
@@ -24,6 +25,8 @@ import "aos/dist/aos.css";
 function App() {
   const [images, setImages] = useState([]);
   const [logout, setLogout] = useState(false);
+  const [totalSupply, setTotalSupply] = useState(0);
+  const [totalMint, setTotalMint] = useState(0);
   const [maxMintAmount, setMaxMintAmount] = useState();
   const [price, setPrice] = useState(0);
   const [userMintedAmount, setUserMintedAmount] = useState(0);
@@ -66,6 +69,19 @@ function App() {
     let accounts = await provider.send("eth_requestAccounts", []);
     let address = accounts[0];
     const imagesTockens = await contract.nftsOnwedByWallet(address);
+
+    const supply = await contract.totalSupply();
+    setTotalSupply(parseInt(supply, 10));
+
+    const mintValue = await contract.maxSupply();
+    setTotalMint(parseInt(mintValue, 10));
+
+    const maxMintAmount = await contract.maxMintAmount();
+    setMaxMintAmount(parseInt(maxMintAmount, 10));
+
+    const userMintedAmount = await contract.balanceOf(address);
+    setUserMintedAmount(parseInt(userMintedAmount, 10));
+
     let imagesLocal = [];
     await imagesTockens.map(async (image) => {
       const url = await contract.tokenURI(parseInt(image, 10));
@@ -141,11 +157,13 @@ function App() {
       <Hero />
       <div className="md:px-[15%] px-[5%]">
         <About />
-        <Minting
+        <Mint
           connection={connection}
           disconnect={disconnect}
           getTokens={getTokens}
           images={images}
+          totalSupply={totalSupply}
+          maxSupply={totalMint}
           maxMintAmount={maxMintAmount}
           price={price}
           readContract={readContract}
